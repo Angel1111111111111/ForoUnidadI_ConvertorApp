@@ -1,0 +1,11 @@
+const convertCurrency = () => {
+  const conversionRate = 24.85;
+  const numericAmount = parseFloat(amount);
+  console.log("Amount:", amount);
+  console.log("Numeric Amount:", numericAmount);
+  if (!isNaN(numericAmount)) {
+    setConvertedAmount((numericAmount * conversionRate).toFixed(2));
+  } else {
+    setConvertedAmount('NaN');
+  }
+};
