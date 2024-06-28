@@ -1,4 +1,3 @@
-// userConversion.js
 import { useState } from 'react';
 
 export const useConversion = () => {
@@ -6,10 +5,9 @@ export const useConversion = () => {
   const [convertedAmount, setConvertedAmount] = useState('');
 
   const convertCurrency = () => {
-    // Example conversion logic
     const amountValue = parseFloat(amount);
     if (!isNaN(amountValue)) {
-      const converted = amountValue * 24.85; // Example conversion rate
+      const converted = amountValue * 24.85; 
       setConvertedAmount(converted.toFixed(2));
     } else {
       setConvertedAmount('');

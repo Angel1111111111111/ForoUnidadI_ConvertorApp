@@ -2,12 +2,12 @@ import React from 'react';
 import { TextInput, StyleSheet } from 'react-native';
 import { style } from '../../config/app-theme';
 
-interface ConversionInputProps {
+interface Props {
   value: string;
   onChangeText: (text: string) => void;
 }
 
-export const ConversionInput: React.FC<ConversionInputProps> = ({ value, onChangeText }) => {
+export const ConversionInput = ({ value, onChangeText }: Props ) => {
   return (
     <TextInput
       style={style.input}

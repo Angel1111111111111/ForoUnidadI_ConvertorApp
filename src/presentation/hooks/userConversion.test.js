@@ -2,7 +2,7 @@ import { renderHook, act } from '@testing-library/react-hooks';
 import { useConversion } from './useConversion';
 
 describe('useConversion', () => {
-  it('converts currency correctly', () => {
+  it('Convierte la moneda', () => {
     const { result } = renderHook(() => useConversion());
 
     act(() => {

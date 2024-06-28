@@ -4,7 +4,7 @@ import {ConversionInput} from '../components/ConversionInput';
 import {ConversionButton} from '../components/ConversionButton';
 
 describe('ConversionInput', () => {
-  it('updates value on text input', () => {
+  it('Actualiza el valor en la entrada de texto', () => {
     const handleChangeText = jest.fn();
     const {getByPlaceholderText} = render(
       <ConversionInput value="" onChangeText={handleChangeText} />,
@@ -15,7 +15,7 @@ describe('ConversionInput', () => {
 });
 
 describe('ConversionButton', () => {
-  it('calls onPress when button is pressed', () => {
+  it('Llama a onPress cuando se preciona el boton', () => {
     const handlePress = jest.fn();
     const {getByText} = render(<ConversionButton onPress={handlePress} />);
     fireEvent.press(getByText('Convertir a HNL'));

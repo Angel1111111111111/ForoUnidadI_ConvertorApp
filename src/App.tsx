@@ -1,4 +1,4 @@
-import {View} from 'react-native';
+import {Text, View} from 'react-native';
 import {ConversionScreen} from './presentation/screens/ConversionScreen';
 
 export const App = () => {
